@@ -1,0 +1,21 @@
+---
+import GitHubIcon from "./Icons/GitHubIcon.astro";
+import LinkedInIcono from "./Icons/LinkedInIcono.astro";
+import YoutubeIcono from "./Icons/YoutubeIcono.astro";
+
+const {name, link} = Astro.props;
+---
+<a 
+class="h-15 w-56 bg-slate-900  bottom-2 border border-white text-white  rounded-2xl shadow-md  hover:bg-blue-950 hover:shadow-orange-200"
+href={link}
+target="_blank"
+>
+<div class="flex justify-center gap-x-3">
+    {
+     name === "Youtube" ? <YoutubeIcono class="size-6 text-white my-4" /> :
+     name === "Linkedin" ? <LinkedInIcono class="size-6 text-white my-4  "  /> :
+     name === "Github" ? <GitHubIcon class="size-6 text-white my-4 "  /> : ""  
+     } <span class="pt-3">{name}</span>
+     </div>
+
+</a>
