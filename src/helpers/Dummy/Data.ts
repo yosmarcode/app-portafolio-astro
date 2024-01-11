@@ -106,7 +106,7 @@ export const dataProjects: IProject = [
   {
     id: 5,
     title: 'app-yosmarweb-spotify',
-    img: 'blob:https://vercel.com/c6b557dd-cd5f-4863-a6d0-d2101791f839',
+    img: 'blob:https://vercel.com/8f83691d-1bae-4734-aa32-4541c850fd44',
     description: 'Spotify Yosmarcode',
     url: 'https://app-yosmarweb-spotify.vercel.app/login',
     active: 1

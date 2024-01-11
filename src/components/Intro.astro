@@ -1,7 +1,12 @@
+---
+import { dataRS, type IDataRS } from "../helpers/Dummy/Data";
+import ButtonLinks from "./ButtonLinks.astro";
+
+---
 
 <section class="px-4">
     <img
-    class="rounded-full size-40  lg:float-end my-10 border border-1 border-white animate-wiggle animate-infinite"
+    class="rounded-none lg:rounded-full xl:rounded-full md:rounded-full size-40  lg:float-end my-10 border border-1 border-white animate-wiggle animate-infinite"
     src="https://lh3.googleusercontent.com/a/ACg8ocIvO4uJGgLl0ZF738Gmq3Nmh8-tVYSM1960jWIoHZQYWjM=s360-c-no"
     alt="Yosmar Hinestroza phone"
   />
@@ -22,3 +27,7 @@
      <code class="text-yellow-300 bg-slate-950 p-1 text-sm rounded-md border border-1  shadow-orange-200 ">console.log("Bienvenidos a"! yosmarcode")</code>
   </h2>
    </section>
+
+   <ul class="w-full gap-4 py-10 p-1 flex justify-normal shadow-neutral-800">
+    {dataRS.map((r): IDataRS => <ButtonLinks name={r.name} link={r.link} />)}
+    </ul>
