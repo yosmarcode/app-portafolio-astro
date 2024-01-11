@@ -1,0 +1,16 @@
+---
+const { title, url, descriptions, img } = Astro.props;
+---
+
+<div
+  class="max-w-sm rounded-xl border border-1 border-white shadow-md bg-clip-border bg-slate-950 hover:bg-blue-950 hover:shadow-orange-200 md:my-10"
+>
+  <a href={url} target="_blank">
+    <img class="rounded-t-lg w-full h-48" src={img} alt={title} />
+    <div class="p-5">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">{title}</h5>
+
+      <p class="mb-3 font-normal text-white">{descriptions}.</p>
+    </div>
+  </a>
+</div>

@@ -1,14 +1,17 @@
 ---
 import { dataExperiencie, type IDataExperiencie } from "../helpers/Dummy/Data";
+import Title from "./Title.astro";
 
 
 ---
+
+<Title title="Experiencia Laboral" />
 
 {
     dataExperiencie.map((r):  IDataExperiencie => (
       <div
         
-        class="relative flex flex-col mt-6   text-gray-700 bg-slate-950 border border-1 border-white  shadow-md bg-clip-border rounded-xl hover:bg-blue-950 hover:shadow-orange-200 md:my-10"
+        class="relative flex flex-col mt-6   text-gray-700 bg-slate-950 border border-1 border-white  shadow-md bg-clip-border rounded-xl hover:bg-blue-950 hover:shadow-orange-200"
       >
         <div class="p-6">
           <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-white">
