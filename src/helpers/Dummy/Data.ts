@@ -70,27 +70,21 @@ export const dataExperiencie: IDataExperiencie = [
 ]
 
 
+
 export const dataProjects: IProject = [
   {
     id: 1,
     title: 'Control diario Ventas',
-    img: 'https://frontend-eboleta.vercel.app/static/media/logo-2021061521352290100.7c414e79dce761480972.jpeg',
-    description: 'Sistema Control de ventas',
+    img: 'img/contro-diario-venta.png',
+    description: 'Sistema de control de invetarios y control de ventas',
     url: 'https://frontend-eboleta.vercel.app/login',
     active: 1
   },
-  {
-    id: 2,
-    title: 'Data Gridjs',
-    img: 'https://frontend-eboleta.vercel.app/static/media/logo-2021061521352290100.7c414e79dce761480972.jpeg',
-    description: 'Ejemplo Gridjs',
-    url: 'https://demo-app-gridjs-ts.vercel.app/',
-    active: 1
-  },
+
   {
     id: 3,
     title: 'App Documentos Acciona',
-    img: 'https://cnegocios.cl/wp-content/uploads/2021/07/cropped-logofinal-260x93.png',
+    img: 'img/acciona-document.png',
     description: 'Sistema de Adminstracion documentos Personal Upload',
     url: 'https://app-repository-document.vercel.app/login',
     active: 1
@@ -98,7 +92,7 @@ export const dataProjects: IProject = [
   {
     id: 4,
     title: 'The Rick and Morty App',
-    img: 'blob:https://vercel.com/76f87211-4e2f-4bee-b697-35a19ec7541b',
+    img: 'img/app-ricky.png',
     description: 'The Rick and Morty App',
     url: 'https://app-rickmorty.vercel.app/',
     active: 1
@@ -106,9 +100,17 @@ export const dataProjects: IProject = [
   {
     id: 5,
     title: 'app-yosmarweb-spotify',
-    img: 'blob:https://vercel.com/8f83691d-1bae-4734-aa32-4541c850fd44',
+    img: 'img/spotity.png',
     description: 'Spotify Yosmarcode',
     url: 'https://app-yosmarweb-spotify.vercel.app/login',
+    active: 1
+  },
+  {
+    id: 6,
+    title: 'Billetera Digital',
+    img: 'img/billetera-digital.png',
+    description: 'Contro de tus gastos diarios',
+    url: 'https://app-digital-wallet.vercel.app/',
     active: 1
   }
 ]
