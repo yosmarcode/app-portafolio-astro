@@ -1,37 +1,40 @@
 ---
 
+import CardProjects from "../components/CardProjects.astro";
 import Intro from "../components/Intro.astro";
-import Projects from "../components/Projects.astro";
 import SectionsContainer from "../components/SectionsContainer.astro";
 import Title from "../components/Title.astro";
 import WorkExperience from "../components/WorkExperience.astro";
 import { dataProjects, type IProject } from "../helpers/Dummy/Data";
 
 import Layout from "../layouts/Layout.astro";
+import NavBar from "../layouts/NavBar.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
-    <SectionsContainer id="quien-soy" class="pb-10 pt-10" _style="">
+  <NavBar />
+  <main class="px-4 animate-fade-left ">
+    <SectionsContainer id="quien-soy" class="pb-10 pt-10  animate-fade-up" _style="">
       <Intro />
     </SectionsContainer>
-	<SectionsContainer id="experiencia-loboral" class="" _style="" >
+	<SectionsContainer id="experiencia-loboral" class="animate-fade-up" _style="" >
 		<WorkExperience />
 	</SectionsContainer>
 
-	<SectionsContainer id="projects" class="pb-10 pt-10" _style="">
+	<SectionsContainer id="projects" class="pb-10 pt-10 animate-fade-up" _style="">
 		<Title title="Proyectos" />
 		<ul
-        class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-4 shadow-neutral-800"
+        class="grid grid-cols-1 gap-4 shadow-neutral-800"
       >
         {
           dataProjects.map(
             (r): IProject => (
-              <Projects
+              <CardProjects
                 title={r.title}
                 img={r.img}
-                url={r.url}
+                href={r.url}
                 descriptions={r.description}
+                active={r.active}
               />
             )
           )
